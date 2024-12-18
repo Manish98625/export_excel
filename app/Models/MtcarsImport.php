@@ -6,7 +6,7 @@ use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ExcelExport extends Model
+class MtcarsImport extends Model
 {
     use CrudTrait;
     use HasFactory;
@@ -17,7 +17,7 @@ class ExcelExport extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'iris';
+    protected $table = 'mtcars';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];

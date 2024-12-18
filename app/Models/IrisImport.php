@@ -6,7 +6,7 @@ use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ExcelExport extends Model
+class IrisImport extends Model
 {
     use CrudTrait;
     use HasFactory;
@@ -21,7 +21,9 @@ class ExcelExport extends Model
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    // protected $fillable = [];
+    protected $fillable = [
+        'Id','sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species'
+    ];
     // protected $hidden = [];
 
     /*
